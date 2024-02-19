@@ -4,8 +4,70 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
+		<script>
+			// 1
+			let name = "My name is: ";
+			console.log(name);
+			// 2
+			let myName = "Aizat";
+			console.log(myName);
+			// 3
+			let myNameIs = name + myName;
+			console.log(myNameIs);
+			// 4-5
+			let number1 = 3;
+			let number2 = 5;
+			let total = number1 + number2;
+			console.log(`Total cost: $${total}`);
+			// 6
+			alert(`Total cost: $${total}`);
+			// 7
+			let num1 = 599 + 295;
+			let num2 = 100;
+			let summa = num1 / num2;
+			console.log(`Total cost: + ${summa}`);
+			// 8
+			let num3 = 599 + 295;
+			let num4 = 100;
+			console.log(`Total cost: $${num3 / num4}`);
+			// 9
+			alert(`Total cost: $${summa}. Thank you, come again!`);
+			// 10
+			console.log(`Items (4): $${(2 * 2095 + 2 * 799) / 100}`);
+			// 11
+			let num5 = (499 + 499) / 100;
+			console.log(`Shipping & handling: $${num5}`);
+			// 12
+			let num6 = (2 * 2095 + 2 * 799 + 499 + 499) / 100;
+			console.log(`Total before tax: $${num6}`);
+			// 13
+			console.log(
+				`Estimated tax (10%): $${
+					Math.round((2 * 2095 + 2 * 799 + 499 + 499) * 0.1) / 100
+				}`
+			);
+
+			// ==============================================================================
+			// 1
+			const nameSimon = "Simon";
+			console.log(nameSimon);
+			// 2
+			console.log(`My name is: ${nameSimon}`);
+			// 3
+			const cost1 = 5 + 2 * 3 + 9;
+			console.log(cost1);
+			// 4
+			console.log(`Cost of food: ${cost1}`);
+			// 5
+			let tax = cost1;
+			let cost = 0.1;
+			console.log(`${tax * cost}`);
+			// 6 - 7 
+			const totalCost = tax + cost;
+			console.log(`Total cost: $${totalCost}`);
+
+		</script>
 	</body>
 </html>
