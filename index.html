@@ -4,8 +4,68 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
+		<script>
+			// 1
+			a = 7;
+			if (a === 10) {
+				console.log("Верно!");
+			} else {
+				console.log("Неверно!");
+			}
+
+			// 2
+			let promtBatir = prompt("Номер квартиры:");
+			let batir = promtBatir;
+			if (1 <= batir && batir <= 20) {
+				console.log("Вы находитесь в 1");
+			} else if (21 <= batir && batir <= 48) {
+				console.log("Вы находитесь в 2");
+			} else if (49 <= batir && batir <= 90) {
+				console.log("Вы находитесь в 3");
+			} else {
+				console.log("Вы ошиблись:)");
+			}
+
+			// 3
+			let numberPrompt = prompt("Введите номер: ");
+			let second = numberPrompt;
+			if (second > 0 && second < 5) {
+				console.log("Верно!");
+			} else {
+				console.log("Неверно!");
+			}
+
+			// 5
+			const name = "Alisher";
+
+			// 4
+			let timeGreeting = 14;
+			if (timeGreeting >= 6 && timeGreeting <= 12) {
+				console.log(`Доброе утро, ${name}!`);
+			} else if (timeGreeting >= 13 && timeGreeting <= 17) {
+				console.log(`Добрый день, ${name}!`);
+			} else {
+				console.log(`Добрый вечер, ${name}!`);
+			}
+
+			// 6
+			let age = 5;
+			if (age <= 6 || age >= 65) {
+				console.log("Арзандатуу");
+			} else {
+				console.log("Арзандатуу жок");
+			}
+
+			// 7
+			let random = Math.random();
+			if (random < 1 && random > 0.5) {
+				console.log("Орёл");
+			} else {
+				console.log("Решка");
+			}
+
+		</script>
 	</body>
 </html>
