@@ -4,7 +4,49 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<style>
+			#toggleButton {
+				width: 80px;
+				height: 40px;
+
+				font-size: 16px;
+				background-color: green;
+				border-radius: 5px;
+				color: white;
+				cursor: pointer;
+			}
+
+			#toggleButton.off {
+				background-color: red;
+			}
+		</style>
 	</head>
 	<body>
+		<!-- 1 -->
+		<button class="js-button">Test</button>
+		<hr />
+		<!-- 2 -->
+		<button id="toggleButton" class="on">ON</button>
+		<hr />
+		<!-- 3 -->
+		<input
+			onkeyup=" if(event.code === 'Enter') {showInputValue()} "
+			type="text"
+			id="inputText" />
+		<button id="submit">Submit</button>
+		<h3 >Your name is: <span id="result"></span></h3>
+		<hr />
+		<!-- 5 -->
+		<input type="text" name="" id="inputTask5" />
+		<p id="resultTask5"></p>
+		<hr />
+		<!-- 6 -->
+		<p id="resultTask6"></p>
+		<button onclick="showNumbers(1)" id="oneNum">1</button>
+		<button onclick="showNumbers(2)" id="twoNum">2</button>
+		<button onclick="showNumbers(3)" id="threeNum">3</button>
+		<button onclick="showNumbers('+')" id="plus">+</button>
+		<hr />
+		<script src="./script.js"></script>
 	</body>
 </html>
