@@ -1,4 +1,3 @@
-const document = index.html;
 const totalResult = JSON.parse(localStorage.getItem("total")) || {
 	lose: 0,
 	win: 0,
@@ -190,17 +189,12 @@ const productSome3 = {
 };
 
 const isSameProduct = (sameProduct1, sameProduct2) => {
-	if (
-		(productSome1.name,
-		productSome2.name && productSome1.price,
-		productSome2.price)
-	) {
-		return true;
-	} else {
-		return false;
-	}
+	return (
+		sameProduct1.name === sameProduct2.name &&
+		sameProduct1.price === sameProduct2.price
+	);
 };
-console.log(isSameProduct(productSome1, productSome2));
+console.log(isSameProduct(productSome1, productSome2), "is same");
 
 // 5 -------------------------------------------------
 console.log("Good Morning".toLowerCase());
@@ -208,6 +202,7 @@ console.log("TESTING".toLowerCase());
 
 // 6 -------------------------------------------------
 console.log("hello".repeat(2));
+console.log("test".repeat(3));
 console.log("test".repeat(3));
 
 // 7 -------------------------------------------------
@@ -220,7 +215,7 @@ document.querySelector(".js-button").innerHTML = "Нажмите";
 console.log(domTask2);
 
 // 9 -------------------------------------------------
-const resultJs = document.querySelector(".resultHtml");
+const resultJs = document.querySelector(".resultHtml"); 
 
 showOrel = () => {
 	resultJs.innerHTML = `Сиздин тандоонуз: Орел`;
