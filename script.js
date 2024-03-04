@@ -215,7 +215,7 @@ document.querySelector(".js-button").innerHTML = "Нажмите";
 console.log(domTask2);
 
 // 9 -------------------------------------------------
-const resultJs = document.querySelector(".resultHtml"); 
+const resultJs = document.querySelector(".resultHtml");
 
 showOrel = () => {
 	resultJs.innerHTML = `Сиздин тандоонуз: Орел`;
@@ -257,3 +257,4 @@ const person = {
 localStorage.setItem("user", JSON.stringify(person));
 const savUser = JSON.parse(localStorage.getItem("user"));
 document.write(JSON.stringify(person));
+
