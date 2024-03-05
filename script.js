@@ -24,8 +24,30 @@ const submit = document.querySelector("#submit");
 const showInputValue = () => {
 	const value = inputValue.value.trim();
 	resultText.innerHTML = value;
+	resultTask.value = "";
 };
 submit.addEventListener("click", showInputValue);
+
+// 3.2
+const input = document.querySelector("#input");
+const button2 = document.querySelector("#button");
+const list = document.querySelector("#list");
+
+button2.addEventListener("click", () => {
+	list.innerHTML = input.value;
+	input.value = "";
+});
+
+// 4
+const inputEnter = document.querySelector("#inputEnter");
+const listEnter = document.querySelector("#listEnter");
+
+listEnter.addEventListener("keyup", function (e) {
+	if (e.code === "Enter") {
+		listEnter.innerHTML = inputEnter.value;
+		inputEnter.value = "";
+	}
+});
 
 // 5
 const secondInputValue = document.querySelector("#inputTask5");
