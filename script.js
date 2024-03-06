@@ -119,8 +119,8 @@ const obratno = JSON.parse(perevestiVString);
 console.log(obratno);
 
 localStorage.setItem("student", perevestiVString);
-const studenAdilet = JSON.parse(localStorage.getItem("student"));
-console.log(studenAdilet);
+const studenAizat = JSON.parse(localStorage.getItem("student"));
+console.log(studenAizat);
 console.log(localStorage.getItem("student"));
 
 // 1.1 -------------------------------------------------
@@ -257,4 +257,3 @@ const person = {
 localStorage.setItem("user", JSON.stringify(person));
 const savUser = JSON.parse(localStorage.getItem("user"));
 document.write(JSON.stringify(person));
-
